@@ -113,10 +113,14 @@ All 4 test suites will execute:
 
 ## 🌐 RESTful API Endpoints
 
-Launch the FastAPI service using Uvicorn:
+Launch the FastAPI service using the provided launcher or Uvicorn:
 
 ```bash
-uvicorn securemailscope.api:app --host 0.0.0.0 --port 8000 --reload
+# Recommended (Automatically restricts hot-reloading to source code):
+python run_server.py
+
+# Or via Uvicorn CLI directly:
+uvicorn securemailscope.api:app --host 0.0.0.0 --port 8000 --reload --reload-dir securemailscope
 ```
 
 Interactive OpenAPI Swagger UI will be accessible at: `http://localhost:8000/docs`
