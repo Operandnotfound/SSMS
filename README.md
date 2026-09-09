@@ -80,7 +80,7 @@ This project contains an embedded, tamper-evident cryptographic authorship signa
 Clone the repository and initialize the Python virtual environment:
 
 ```bash
-git clone <repository_url>
+git clone <https://github.com/Operandnotfound/SSMS>
 cd SIH
 
 # Create virtual environment
